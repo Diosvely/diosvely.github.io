@@ -8,6 +8,8 @@
 </head>
 <body>
   <header>
+    <img src="Fotopelfil.jpg" alt="Foto de perfil" class="perfil">
+
     <h1>Diosvely Perez Arteaga</h1>
     <h2>Finance & BI Analyst | Power BI | SQL | Microsoft Fabric</h2>
     <nav>
@@ -28,24 +30,43 @@
     </p>
   </section>
 
-  <section id="proyectos">
-    <h3>Proyectos destacados</h3>
-    <ul>
-      <li><strong>Dashboard PyG en Power BI:</strong> análisis de rentabilidad 2024-2025.</li>
-      <li><strong>SQL Cost Analysis:</strong> consultas para control de inventario y costos.</li>
-      <li><strong>Microsoft Fabric:</strong> modelo de datos financiero completo.</li>
-    </ul>
-  </section>
+
+ <section id="proyectos">
+  <h3>Proyectos destacados</h3>
+  <div class="proyectos-grid">
+    <div class="card">
+      <h4>📊 Dashboard PyG en Power BI</h4>
+      <p>Análisis de rentabilidad 2024-2025 con KPIs financieros clave.</p>
+    </div>
+    <div class="card">
+      <h4>🗄 SQL Cost Analysis</h4>
+      <p>Consultas SQL avanzadas para control de inventario y costos.</p>
+    </div>
+    <div class="card">
+      <h4>☁️ Microsoft Fabric</h4>
+      <p>Modelo de datos financiero completo para reporting en tiempo real.</p>
+    </div>
+  </div>
+</section>
+
+
+
 
   <section id="contacto">
-    <h3>Contacto</h3>
-    <p>📧 Email: diosvely@gmail.com</p>
-    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/diosvelyperezarteaga" target="_blank">Tu Perfil</a></p>
-    <p>💻 GitHub: <a href="https://github.com/Diosvely" target="_blank">Tu GitHub</a></p>
-  </section>
+  <h3>Contacto</h3>
+  <a href="mailto:diosvely@gmail.com" class="btn">📧 Email</a>
+  <a href="https://www.linkedin.com/in/diosvelyperezarteaga" target="_blank" class="btn">🔗 LinkedIn</a>
+  <a href="https://github.com/Diosvely" target="_blank" class="btn">💻 GitHub</a>
+</section>
 
-  <footer>
-    <p>© 2025 Tu Nombre | Portafolio Online</p>
-  </footer>
+
+ <footer>
+  <p>© <span id="year"></span> Diosvely Perez Arteaga | Portafolio Online</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
